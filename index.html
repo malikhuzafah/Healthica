@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#125487">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#125487">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://kit.fontawesome.com/d32649dfde.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+    <title>Healthica.</title>
+</head>
+
+<body>
+    <div class="head">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <!-- <div id="logo"></div> -->
+                        <span class="h2"><strong>Healthica.</strong></span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Doctor
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Find by specialist</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Find by disease</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Find by hospital</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hospital
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lahore</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Karachi</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Gujranwala</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Islamabad</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="education-link" href="./career.html"><span>Career</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="proj-link" href="./contact.html"><span>Health blog</span></a>
+                            </li>
+                        </ul>
+                        <div id="navbar-btn">
+                            <a href="./login.html">
+                                <button class="my-btn btn"><span>Login / Signup</span></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="home">
+                    <div id="slide-1"></div>
+                    <div class="carousel-container carousel-caption" align="center">
+                        <div class="container">
+                            <span class="h1">Lorem ipsum dolor sit amet consectetur</span>
+                            <p>
+                                <span>Lorem ipsum dolor nemo reprehenderit molestias iste totam harum, ducimus veniam
+                                    eos velit quas, itaque beatae repellat. Ex neque quos ad doloribus quisquam?</span>
+                            </p>
+                            <a href="#">
+                                <button class="btn my-btn2">
+                                    <span>Book appointment</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="slide-2"></div>
+                    <div class="carousel-container carousel-caption" align="center">
+                        <div class="container">
+                            <span class="h1">Lorem ipsum dolor sit amet consectetur</span>
+                            <p>
+                                <span>Lorem ipsum dolor nemo reprehenderit molestias iste totam harum, ducimus veniam
+                                    eos velit quas, itaque beatae repellat. Ex neque quos ad doloribus quisquam?</span>
+                            </p>
+                            <a href="#">
+                                <button class="btn my-btn2">
+                                    <span>See Doctors</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="slide-3"></div>
+                    <div class="carousel-container carousel-caption" align="center">
+                        <div class="container">
+                            <span class="h1">Lorem ipsum dolor sit amet consectetur</span>
+                            <p>
+                                <span>Lorem ipsum dolor nemo reprehenderit molestias iste totam harum, ducimus veniam
+                                    eos velit quas, itaque beatae repellat. Ex neque quos ad doloribus quisquam?</span>
+                            </p>
+                            <a href="#">
+                                <button class="btn my-btn2">
+                                    <span>See Hospitals</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="title h1 text-center"><strong>About Us.</strong></p>
+                </div>
+                <dic class="col-12">
+                    <div class="container" id="about-container">
+                        <p id="about-bio">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima omnis recusandae
+                            quisquam natus cupiditate voluptates perferendis reiciendis, iste ducimus excepturi expedita
+                            sapiente labore repudiandae asperiores odit accusantium soluta ut.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima omnis recusandae
+                            quisquam natus cupiditate voluptates perferendis reiciendis, iste ducimus excepturi expedita
+                            sapiente labore repudiandae asperiores odit accusantium soluta ut.
+                        </p>
+                    </div>
+                </dic>
+            </div>
+        </div>
+    </div>
+    <div id="how-it-works">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="title h1 text-center"><strong>How It Wokrs?</strong></p>
+                </div>
+                <div class="col-3">
+                    <div id="ht-1">
+                        <img class="img-fluid" src="images/icon1.png" width="120px" height="120px">
+                        <p><strong>1. <br class="d-block d-sm-none"></strong><span>Search for a doctor</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="ht-2">
+                        <img class="img-fluid" src="images/icon2.png" width="120px" height="120px">
+                        <p><strong>2. <br class="d-block d-sm-none"></strong><span>Select a doctor</span></p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="ht-3">
+                        <img class="img-fluid" src="images/icon3.png" width="120px" height="120px">
+                        <p><strong>3. <br class="d-block d-sm-none"></strong><span>Select appropriate date and time</span></p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div id="ht-4">
+                        <img class="img-fluid" src="images/icon4.png" width="120px" height="120px">
+                        <p><strong>4. <br class="d-block d-sm-none"></strong><span>Book appointment</span></p>
+                    </div>
+                </div>
+                <div class="container" id="book-survey">
+                    <a href="#" class="btn my-btn"><span>Book your appointment</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="title h1 text-center"><strong>Cities.</strong></p>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="proj-container container text-center">
+                        <a href="">
+                            <div class="container img-proj img-fluid" id="proj1"></div>
+                            <span class="h4">Lahore</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="proj-container container text-center">
+                        <a href="">
+                            <div class="container img-proj img-fluid" id="proj2"></div>
+                            <span class="h4">Karachi</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="proj-container container text-center">
+                        <a href="">
+                            <div class="container img-proj img-fluid" id="proj3"></div>
+                            <span class="h4">Gujranwala</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="proj-container container text-center">
+                        <a href="">
+                            <div class="container img-proj img-fluid" id="proj4"></div>
+                            <span class="h4">Islamabad</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="counter-div">
+        <div class="container">
+            <div id="counter" class="row" align="center">
+                <div class="col-12 col-sm-6 col-md-3 count">
+                    <span class="h3">Appointments Booked</span>
+                    <div class="container counter-container img-fluid">
+                        <strong>
+                            <div class="counter-value" data-count="3000">0</div>
+                        </strong>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+                <div class="col-12 col-sm-6 col-md-3 count">
+                    <span class="h3">Doctors</span>
+                    <div class="container counter-container img-fluid">
+                        <strong>
+                            <div class="counter-value" data-count="1000">0</div>
+                        </strong>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+                <div class="col-12 col-sm-6 col-md-3 count">
+                    <span class="h3">Hospitals</span>
+                    <div class="container counter-container img-fluid">
+                        <strong>
+                            <div class="counter-value" data-count="100">0</div>
+                        </strong>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+                <div class="col-12 col-sm-6 col-md-3 count">
+                    <span class="h3">Cities</span>
+                    <div class="container counter-container img-fluid">
+                        <strong>
+                            <div class="counter-value" data-count="4">0</div>
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <div class="container w-100">
+            <p class="title h1 text-center"><strong>Reviews.</strong></p>
+        </div>
+        <div class="container" style="padding: 50px;">
+            <div id="carouselExampleIndicators1" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="home">
+                        <div class="row d-flex justify-content-center" id="testimonial">
+                            <div class="col-md-8 col-lg-9 col-xl-8">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="./images/profile.png"
+                                            class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="120"
+                                            height="120">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <figure>
+                                            <blockquote class="blockquote mb-4">
+                                                <p>
+                                                    <i class="fas fa-quote-left fa-lg me-2"></i>
+                                                    <span class="fst-italic">Lorem ipsum dolor sit amet, consectetur
+                                                        adipisicing elit. Necessitatibus reprehenderit facilis
+                                                        voluptatum cupiditate fugiat, ratione magni blanditiis, itaque
+                                                        voluptatem sed obcaecati ad pariatur architecto deserunt
+                                                        exercitationem dolor perferendis rem eveniet.</span>
+                                                </p>
+                                            </blockquote>
+                                            <figcaption class="blockquote-footer">
+                                                Mr. Rana Javed Iqbal | Karachi
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center" id="testimonial">
+                            <div class="col-md-8 col-lg-9 col-xl-8">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="./images/profile.png"
+                                            class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="120"
+                                            height="120">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <figure>
+                                            <blockquote class="blockquote mb-4">
+                                                <p>
+                                                    <i class="fas fa-quote-left fa-lg me-2"></i>
+                                                    <span class="fst-italic">Lorem, ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Vero nam quo deleniti architecto? Optio fugiat
+                                                        dignissimos voluptas dolor est, explicabo ad temporibus cumque
+                                                        deserunt quam ratione suscipit eligendi, maiores rerum!</span>
+                                                </p>
+                                            </blockquote>
+                                            <figcaption class="blockquote-footer">
+                                                Mr. Ahsan Abdullah | Gujranwala
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row d-flex justify-content-center" id="testimonial">
+                            <div class="col-md-8 col-lg-9 col-xl-8">
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <img src="./images/profile.png"
+                                            class="rounded-circle mb-4 mb-lg-0 shadow-2" alt="woman avatar" width="120"
+                                            height="120">
+                                    </div>
+                                    <div class="col-12 col-md-8">
+                                        <figure>
+                                            <blockquote class="blockquote mb-4">
+                                                <p>
+                                                    <i class="fas fa-quote-left fa-lg me-2"></i>
+                                                    <span class="fst-italic">Lorem ipsum dolor sit, amet consectetur
+                                                        adipisicing elit. Possimus enim modi et molestias doloribus
+                                                        nobis itaque aspernatur. Voluptatem odio fuga dignissimos ipsa
+                                                        repellat explicabo, ex iure, quam quod accusantium ipsam?
+                                                    </span>
+                                                </p>
+                                            </blockquote>
+                                            <figcaption class="blockquote-footer">
+                                                Mr. Malik Huzafah | Lahore
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="title2 h1 text-center"><strong>Contact Us.</strong></p>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="container" id="contact-info">
+                        <p class="h2">Lets Get In Touch.</p>
+                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
+                            recusandae assumenda cupiditate, maiores nesciunt sapiente possimus fugiat amet laborum in
+                            voluptatum a animi dignissimos ut repellat porro alias tempore!</p>
+                        <p class="h4">Email:</p>
+                        <p class="h6">info@healthica.com.pk</p>
+                        <p class="h4">Phone:</p>
+                        <p class="h6">+923000000000</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="container" id="form">
+                        <div>
+                            <p class="h2">Say hello.</p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name-input" placeholder="Full Name">
+                            <p id="name-err"></p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email-input" placeholder="Email Address">
+                            <p id="email-err"></p>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="msg-input" rows="3" placeholder="Message"></textarea>
+                            <p id="msg-err"></p>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <span class="h5" id="submitted"></span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <button id="send" class="my-btn2 btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white">
+        <div class="row" id="footer">
+            <div class="container">
+                <div class="social-icons spinned">
+                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
+                    <a class="item phone" href="tel:+923066882888" target="_blank"><em
+                            class="fa-solid fa-phone"></em></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-2" id="copyright">
+            <span>&copy; <em id="date"></em>Healthica. All rights reserved</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

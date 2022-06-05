@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#125487">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#125487">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://kit.fontawesome.com/d32649dfde.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+    <title>YAAS Energy</title>
+</head>
+
+<body class="auth-body">
+    <div class="container auth-container" align="center">
+        <div class="container auth">
+            <div class="container auth-brand">
+                <a href="./index.html">
+                    <span class="h2"><strong>Healthica.</strong></span>
+                </a>
+            </div>
+            <form action="" class="container" id="form">
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" id="name-input" placeholder="Full Name">
+                    <p id="name-err"></p>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" id="email-input" placeholder="Email Address">
+                    <p id="email-err"></p>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="password" class="form-control" id="pass-input" placeholder="Password">
+                    <p id="msg-err"></p>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="confirmPassword" class="form-control" id="conPass-input" placeholder="Password">
+                    <p id="msg-err"></p>
+                </div>
+                <div class="mb-3">
+                    <select name="type" id="type-input" class="form-select">
+                        <option value="doctor"><span>Doctor</span></option>
+                        <option value="patient"><span>Patient</span></option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <button type="submit" id="send" class="my-btn2 btn">Signup</button>
+                </div>
+            </form>
+            <div class="container">
+                <span>Already have an account? <a href="./login.html">Login instead</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
