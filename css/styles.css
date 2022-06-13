@@ -19,7 +19,7 @@ a {
 /* navbar */
 
 .head {
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #navbar {
@@ -131,12 +131,16 @@ a {
     font-size: 1.2em;
 }
 
-#about, #how-it-works, #projects, #contact, #testimonials {
+#about, #how-it-works, #projects, #contact, #testimonials, #medicines-container {
     padding: 100px 0;
 }
 
 #book-survey {
     margin-top: 30px;
+}
+
+.card-container {
+    padding: 20px;
 }
 
 /* titles */
@@ -354,10 +358,21 @@ a {
 
 /* footer end  */
 
+
+#shop-head-img {
+    background-image: url("../images/slide1.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 500px;
+    text-align: center;
+}
+
 /* login and signup */
 
 .auth-body {
-    background: url('../images/pexels-pixabay-40568.jpg') no-repeat;
+    background: url('../images/slide1.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -384,6 +399,10 @@ a {
 
 .auth-brand {
     padding-bottom: 30px;
+}
+
+.card {
+    width: 100%;
 }
 
 /* login and signup end  */

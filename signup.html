@@ -23,8 +23,9 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/signup.js"></script>
 
-    <title>YAAS Energy</title>
+    <title>Healthica.</title>
 </head>
 
 <body class="auth-body">
@@ -35,33 +36,27 @@
                     <span class="h2"><strong>Healthica.</strong></span>
                 </a>
             </div>
-            <form action="" class="container" id="form">
+            <!-- <form class="container"> -->
                 <div class="mb-3">
-                    <input type="text" name="name" class="form-control" id="name-input" placeholder="Full Name">
+                    <input type="text" class="form-control" id="name-input" placeholder="Full Name">
                     <p id="name-err"></p>
                 </div>
                 <div class="mb-3">
-                    <input type="email" name="email" class="form-control" id="email-input" placeholder="Email Address">
+                    <input type="email" class="form-control" id="email-input" placeholder="Email Address">
                     <p id="email-err"></p>
                 </div>
                 <div class="mb-3">
-                    <input type="password" name="password" class="form-control" id="pass-input" placeholder="Password">
+                    <input type="password" class="form-control" id="pass-input" placeholder="Password">
                     <p id="msg-err"></p>
                 </div>
                 <div class="mb-3">
-                    <input type="password" name="confirmPassword" class="form-control" id="conPass-input" placeholder="Password">
+                    <input type="password" class="form-control" id="conPass-input" placeholder="Confirm Password">
                     <p id="msg-err"></p>
                 </div>
                 <div class="mb-3">
-                    <select name="type" id="type-input" class="form-select">
-                        <option value="doctor"><span>Doctor</span></option>
-                        <option value="patient"><span>Patient</span></option>
-                    </select>
+                    <button id="signup" class="my-btn2 btn">Signup</button>
                 </div>
-                <div class="mb-3">
-                    <button type="submit" id="send" class="my-btn2 btn">Signup</button>
-                </div>
-            </form>
+            <!-- </form> -->
             <div class="container">
                 <span>Already have an account? <a href="./login.html">Login instead</a></span>
             </div>

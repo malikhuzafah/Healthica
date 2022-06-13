@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#125487">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#125487">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="https://kit.fontawesome.com/d32649dfde.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+
+    <title>Healthica.</title>
+</head>
+
+<body>
+    <div class="head">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <span class="h2"><strong>Healthica.</strong></span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse align-middle" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Doctor
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Find by specialist</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Find by disease</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Find by hospital</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hospital
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Lahore</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Karachi</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Gujranwala</a></li>
+                                    <hr class="dropdown-divider">
+                                    <li><a class="dropdown-item" href="#">Islamabad</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="education-link" href="./shop.html"><span>Pharmacy</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="proj-link" href=""><span>Health blog</span></a>
+                            </li>
+                        </ul>
+                        <div id="navbar-btn">
+                            <a href="./login.html" id="login">
+                                <button class="my-btn btn" id="loginOrSignup"><span>Login / Signup</span></button>
+                            </a>
+                        </div>
+                        <div id="navbar-btn">
+                            <a href="./cart.html" id="cart">
+                                <button class="my-btn btn" id="cart-btn"><span>Cart</span></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="w-100">
+            <div class="img-fluid" id="shop-head-img">
+                <div class="container">
+                    <span class="h1">Pharmacy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="medicines-container">
+        <div class="container">
+            <p class="title h1 text-center w-100"><strong>Medicines.</strong></p>
+        <div class="row" id="medicines">
+            
+        </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="title2 h1 text-center"><strong>Contact Us.</strong></p>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="container" id="contact-info">
+                        <p class="h2">Lets Get In Touch.</p>
+                        <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam veniam
+                            recusandae assumenda cupiditate, maiores nesciunt sapiente possimus fugiat amet laborum in
+                            voluptatum a animi dignissimos ut repellat porro alias tempore!</p>
+                        <p class="h4">Email:</p>
+                        <p class="h6">info@healthica.com.pk</p>
+                        <p class="h4">Phone:</p>
+                        <p class="h6">+923000000000</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="container" id="form">
+                        <div>
+                            <p class="h2">Say hello.</p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name-input" placeholder="Full Name">
+                            <p id="name-err"></p>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email-input" placeholder="Email Address">
+                            <p id="email-err"></p>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="msg-input" rows="3" placeholder="Message"></textarea>
+                            <p id="msg-err"></p>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <span class="h5" id="submitted"></span>
+                            </div>
+                            <div class="col-6 text-end">
+                                <button id="send" class="my-btn2 btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center text-white">
+        <div class="row" id="footer">
+            <div class="container">
+                <div class="social-icons spinned">
+                    <a class="item facebook" href="#" target="_blank"><em class="fa fa-facebook"></em></a>
+                    <a class="item linkedin" href="#" target="_blank"><em class="fa fa-linkedin"></em></a>
+                    <a class="item instagram" href="#" target="_blank"><em class="fa fa-instagram"></em></a>
+                    <a class="item phone" href="tel:+923066882888" target="_blank"><em
+                            class="fa-solid fa-phone"></em></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-2" id="copyright">
+            <span>&copy; <em id="date"></em>Healthica. All rights reserved</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
