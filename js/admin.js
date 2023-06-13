@@ -10,6 +10,7 @@ $(function () {
     $.ajax({
       url: "http://localhost:4000/api/medicines/" + id,
       method: "PUT",
+      headers: {"x-auth-token": localStorage.getItem("user")},
       data: { name: name, price: price, quantity: quantity },
       success: function (response) {
         console.log("Updated");
@@ -38,6 +39,7 @@ function addRecipe() {
   $.ajax({
     url: "http://localhost:4000/api/medicines",
     method: "POST",
+    headers: {"x-auth-token":localStorage.getItem("user")},
     data: {
       name: name,
       price: price,
@@ -60,6 +62,7 @@ function handleDelete() {
   $.ajax({
     url: "http://localhost:4000/api/medicines/" + id,
     method: "DELETE",
+    headers: {"x-auth-token":localStorage.getItem("user")},
     success: function (response) {
       console.log("success");
       loadMedicines();
@@ -74,6 +77,9 @@ function handleUpdate() {
   $.ajax({
     url: "http://localhost:4000/api/medicines/" + id,
     method: "GET",
+    error: function(err) {
+      alert(err.message);
+    },
     success: function (response) {
       $("#id-update").val(response._id);
       $("#name-update").val(response.name);

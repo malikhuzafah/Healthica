@@ -1,3 +1,24 @@
+$(function () {
+  todayDate();
+  start();
+  // loadCart();
+  $("#navbar-toggle").click(opennav);
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  $(".navbar-brand").click(function () {
+    $(window).scrollTop(0);
+  });
+  $(".nav-link").click(function () {
+    $(window).scrollTop(0);
+  });
+  $("#send").click(validate);
+  loadMedicines();
+  console.log($(".addToCart"));
+  $(".addToCart").on("click", addToCart);
+});
+
+
 var a = 0;
 $(window).scroll(function () {
   var oTop = $("#counter").offset().top - window.innerHeight;
@@ -38,7 +59,7 @@ $(window).scroll(function () {
 // });
 
 function opennav() {
-  var nav = document.getElementById("navbarSupportedContent");
+  var nav = $("#navbarSupportedContent");
   nav.style.height = "0";
 }
 
@@ -48,46 +69,35 @@ function todayDate() {
   return (document.getElementById("date").innerHTML = n);
 }
 
-$(function () {
-  todayDate();
-  $("#navbar-toggle").click(opennav);
-  window.onscroll = function () {
-    scrollFunction();
-  };
-  $(".navbar-brand").click(function () {
-    $(window).scrollTop(0);
-  });
-  $(".nav-link").click(function () {
-    $(window).scrollTop(0);
-  });
-  $("#send").click(function () {
-    var c = 0;
-    if ($("#name-input").val().length === 0) {
-      $("#name-err").html("Name is required!");
-    } else {
-      $("#name-err").html("");
-      c++;
-    }
-    if ($("#email-input").val().length === 0) {
-      $("#email-err").html("Email is required!");
-    } else {
-      $("#email-err").html("");
-      c++;
-    }
-    if ($("#msg-input").val().length === 0) {
-      $("#msg-err").html("Please enter some Message!");
-    } else {
-      $("#msg-err").html("");
-      c++;
-    }
-    if (c >= 3) {
-      var email = $("#email-input").val();
-      var name = $("#name-input").val();
-    } else {
-      $("#submitted").html("");
-    }
-  });
-});
+
+
+function validate() {
+  var c = 0;
+  if ($("#name-input").val().length === 0) {
+    $("#name-err").html("Name is required!");
+  } else {
+    $("#name-err").html("");
+    c++;
+  }
+  if ($("#email-input").val().length === 0) {
+    $("#email-err").html("Email is required!");
+  } else {
+    $("#email-err").html("");
+    c++;
+  }
+  if ($("#msg-input").val().length === 0) {
+    $("#msg-err").html("Please enter some Message!");
+  } else {
+    $("#msg-err").html("");
+    c++;
+  }
+  if (c >= 3) {
+    var email = $("#email-input").val();
+    var name = $("#name-input").val();
+  } else {
+    $("#submitted").html("");
+  }
+}
 
 function scrollFunction() {
   if (
@@ -127,52 +137,64 @@ function loadMedicines() {
             res[i].price +
             '</h6><h6 class"card-subtilte">' +
             res[i].quantity +
-            ' left</h6><button class="btn btn-primary addToCart" onclick="alert(\'Added to cart\')">Add to cart</button></div></div></div>'
+            ' left</h6><button class="btn btn-primary addToCart" onclick="addToCart()">Add to cart</button></div></div></div>'
         );
       }
     },
   });
 }
 
-$(function () {
-  loadMedicines();
-  console.log($(".addToCart"));
-  $(".addToCart").on("click", addToCart);
-  start();
-});
-
 function logout() {
-  if (typeof Storage !== "undefined") {
     localStorage.setItem("user", "");
-    console.log(localStorage.getItem("user"));
-    $("#loginOrSignup").html("Login / Signup");
-  }
+    localStorage.setItem("role", "");
 }
 
 function start() {
   if (localStorage.getItem("user").length <= 0) {
-    $("#loginOrSignup").html("Login / Signup");
-    $("#login").attr("href", "../login.html");
-    console.log(localStorage.getItem("user") + "else");
+    $("#loginOrSignup").show();
+    $("#logout").hide();
+    $("#admin-link").hide();
   } else {
-    console.log(localStorage.getItem("user") + "if");
-    $("#loginOrSignup").html("Logout");
-    $("#login").attr("href", "#");
-    $("#loginOrSignup").on("click", logout);
+    $("#loginOrSignup").hide();
+    $("#logout").show();
+    $("#logout").on("click", logout);
+    if (localStorage.getItem("role") === "admin") {
+      $("#admin-link").show();
+    }
+    else {
+      $("#admin-link").hide();
+    }
   }
 }
 
-// function addToCart(id) {
-  // console.log(id);
-  // $.ajax({
-  //   url: "http://localhost:4000/api/medicines/" + id,
-  //   method: "GET",
-  //   success: function (response) {
-  //     localStorage.setItem("cart", response);
-  //     console.log(localStorage.getItem("cart"));
-  //     alert("added");
-  //   },
-  // });
+// function addToCart() {
+//   let cart = ["hello", "hi"];
+//   setCookie("cart", cart, 30);
+//   console.log(getCookie("cart"));
+// }
 
-  // alert("Added to cart");
+// function loadCart() {
+//   $("#cartItems").empty();
+//   var cart = getCookie("cart");
+//   for (var i=0;i<cart.length;i++) {
+//     $("#cartItems").append("<p>" + cart[i] + "</p>");
+//   }
+// }
+
+// function getCookie(cName) {
+//   const name = cName + "=";
+//   const cDecoded = decodeURIComponent(document.cookie); //to be careful
+//   const cArr = cDecoded.split('; ');
+//   let res;
+//   cArr.forEach(val => {
+//       if (val.indexOf(name) === 0) res = val.substring(name.length);
+//   })
+//   return res;
+// }
+
+// function setCookie(cName, cValue, expDays) {
+//   let date = new Date();
+//   date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+//   const expires = "expires=" + date.toUTCString();
+//   document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
 // }
